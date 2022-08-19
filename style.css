@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(159, 173, 173);
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    font-size: x-large;
+}
+
+label {
+    font-size: large;
+}
+
+form {
+    margin-bottom: 10px;
+}
