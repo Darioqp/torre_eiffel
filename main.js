@@ -5,12 +5,26 @@ let boton = document.getElementById("botonDibujar");
 
 boton.addEventListener("click", DibujarTorre);
 
-function DibujarTorre(x1, y1, x2, y2) {
-  let color = document.getElementById("InputColor");
+function DibujarLinea(color, x1, y1, x2, y2) {
+
   lienzo.beginPath();
-  lienzo.strokeStyle = "color.value";
-  lienzo.moveTo(0, 0);
-  lienzo.lineTo(400, 400);
+  lienzo.strokeStyle = color;
+  lienzo.moveTo(x1, y1);
+  lienzo.lineTo(x2, y2);
   lienzo.stroke();
   lienzo.closePath();
+}
+
+function DibujarTorre() {
+
+  let numeroDeLineas = lineas.value;
+  let delta = dibujo.width / numeroDeLineas;
+
+  for (n=0; n <= numeroDeLineas ; n++) {
+
+    DibujarLinea("red", 0, delta*n, delta*n, 400)
+    DibujarLinea("blue", delta*n, 0, 400, delta*n)
+
+  }
+  
 }

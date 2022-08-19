@@ -1,13 +1,27 @@
 body {
-    background-color: rgb(159, 173, 173);
+    background-color: rgb(199, 212, 212);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 h1 {
     text-align: center;
 }
 
+main {
+    max-width: 600px;
+    margin: 0 auto;    
+}
+
+div {
+
+    display: flex;
+    justify-content: center;
+
+}
+
 p {
     font-size: x-large;
+    text-align: center;
 }
 
 label {
@@ -15,5 +29,12 @@ label {
 }
 
 form {
-    margin-bottom: 10px;
+    text-align: center;
+    padding: 1em 0;
+}
+
+canvas {
+    background-color: rgb(157, 177, 177);
+    max-width: 400px;
+
 }
